@@ -1,0 +1,10 @@
+#include "stm32l476xx.h"
+#include "rcc.h"
+
+void RCC_Init(void)
+{
+    RCC->AHB2ENR |= RCC_AHB2ENR_GPIOAEN;
+    RCC->AHB2ENR |= RCC_AHB2ENR_GPIOBEN;
+    RCC->APB1ENR1 |= RCC_APB1ENR1_USART2EN;
+    RCC->APB1ENR1 |= RCC_APB1ENR1_I2C1EN;
+}

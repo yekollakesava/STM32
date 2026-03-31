@@ -1,0 +1,21 @@
+# STM32CubeIDE
+.metadata/
+STM32CubeIDE_*/
+
+# Build files
+Debug/
+Release/
+*.o
+*.elf
+*.map
+
+# Executables
+*.exe
+
+# Temporary files
+*.log
+*.tmp
+
+# OS files
+.DS_Store
+Thumbs.db
